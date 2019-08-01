@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <Authors>zlzforever@163.com</Authors>
+        <AssemblyName>drc</AssemblyName>
+        <PackageId>DockerRegistryClient.Cli</PackageId>
+        <Company />
+        <Product>DockerRegistryClient.Cli</Product>
+        <Description>A docker registry client</Description>
+        <PackageProjectUrl>https://github.com/zlzforever/DockerRegistryClient</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/zlzforever/DockerRegistryClient</RepositoryUrl>
+        <PackageTags>Docker; Registry;</PackageTags>
+        <AssemblyVersion>0.0.10</AssemblyVersion>
+        <FileVersion>0.0.10</FileVersion>
+        <PackAsTool>true</PackAsTool>
+        <Version>0.0.10</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="2.2.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\DockerRegistryClient\DockerRegistryClient.csproj" />
+    </ItemGroup>
+
+</Project>
