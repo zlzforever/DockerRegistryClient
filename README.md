@@ -5,7 +5,8 @@ A sample registry client
 ## Install
 
 ```
-dotnet tool install --global DockerRegistryClient.Cli --version 0.0.10
+curl -L https://github.com/zlzforever/DockerRegistryClient/releases/download/0.0.10/drc-`uname -s`-`uname -m` -o /usr/local/bin/drc
+chmod +x /usr/local/bin/drc
 ```
 
 ## Usage
